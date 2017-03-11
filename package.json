@@ -15,7 +15,6 @@
         "url": "https://github.com/gjtorikian/function-extractor"
     },
     "dependencies"  : {
-        "esprima":    "",
-        "coffee-script-redux": ""
+        "esprima":    ""
      }
 }
