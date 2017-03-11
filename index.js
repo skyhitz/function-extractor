@@ -167,10 +167,6 @@
   };
 
   exports.parse = function(code, options) {
-    if (options && options.coffeescript) {
-      csr = require("coffee-script-redux");
-      code = csr.js(csr.compile(csr.parse(code)));
-    }
 
     var tree = esprima.parse(code, {
       loc: true,
