@@ -1,6 +1,5 @@
 (function() {  
-  var util = require('util'),
-      esprima = require('esprima'),
+   var esprima = require('esprima'),
       
   traverse = function(object, visitor, master) {
     var parent;
@@ -103,7 +102,6 @@
 
             if (!matched) {
               console.error("Never found a matching arrangement!");
-              console.error(util.inspect(parent.left, null, 5));
             }
             else {
               return list.push({
